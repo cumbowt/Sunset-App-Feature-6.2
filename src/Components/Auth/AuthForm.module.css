@@ -1,0 +1,73 @@
+/* AuthForm.module.css */
+.authForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 150px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.formGroup input {
+  width: 372px;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: -3px;
+  margin-bottom: 20px;
+}
+
+.submitButton,
+.returnHomeButton {
+  width: 400px;
+  height: 45px;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.submitButton {
+  background-color: #ed9609;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #e99816e3;
+}
+
+.returnHomeButton {
+  color: #d48607;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  border: 1px solid #d48607;
+}
+
+.returnHomeButton:hover {
+  background-color: #f3f3f386;
+}
+
+/* Global body styling - Hides vertical & horizontal scroll indicators */
+/* and resets the browser's default margin and padding styles*/
+body {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}

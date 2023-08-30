@@ -1,0 +1,78 @@
+/* About.module.css */
+
+/* The .heroImage class is used to create a full screen hero section with background image */
+.heroImage {
+  position: relative;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* The pseudo-element ::after adds an overlay to .heroImage class */
+.heroImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* The .heroTitle class is used to style the title text that appears on top of the background image */
+.heroTitle {
+  position: relative;
+  color: white;
+  text-align: center;
+  margin: auto;
+  z-index: 1;
+}
+
+.bottomSection {
+  padding-top: 2vh;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 70px auto;
+}
+
+.aboutTitle {
+  text-align: center;
+  font-size: 2em;
+  color: #ed9609;
+  margin: 1em 0;
+}
+
+.aboutText {
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  margin: 1em 0;
+}
+
+/* Global body styling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}

@@ -1,0 +1,106 @@
+/* Profile.module.css */
+
+/* The .heroImage class is used to create a full screen hero section with background image */
+.heroImage {
+  position: relative;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* The pseudo-element ::after adds an overlay to .heroImage class */
+.heroImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* The .heroTitle class is used to style the title text that appears on top of the background image */
+.heroTitle {
+  position: relative;
+  color: white;
+  text-align: center;
+  margin: auto;
+  z-index: 1;
+}
+
+.bottomSection {
+  padding-top: 2vh;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 70px auto;
+}
+
+.profileTitle {
+  text-align: center;
+  font-size: 2em;
+  color: #ed9609;
+  margin: 1em 0;
+}
+
+.profileGallery {
+  display: block;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+.profileImage {
+  max-width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profileText {
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  margin: 1em 0;
+}
+
+@media (min-width: 768px) {
+  .heroGallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Global body styling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}

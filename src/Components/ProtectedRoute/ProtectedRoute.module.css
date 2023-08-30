@@ -1,0 +1,38 @@
+/* ProtectedRoute.module.css */
+
+.unauthorized {
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #ff7f5f41;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.unauthorized h1 {
+  font-size: 2.5em;
+}
+
+.fourZeroFour {
+  font-size: 300px;
+  font-weight: bold;
+}
+
+.authButton {
+  margin-top: 2em;
+  font-size: 1.2em;
+  padding: 0.5em 2em;
+  border: none;
+  border-radius: 5px;
+  color: #ff7e5f;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.authButton:hover {
+  transform: scale(1.05);
+  color: white;
+  background-color: #ff7e5f;
+}

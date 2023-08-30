@@ -1,0 +1,133 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/*import Google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+div.homeImage {
+  /*background-image: url("./Images/SunsetBeachLessTree.jpg");*/
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /*background-color: rgb(242, 221, 138);*/
+  padding: 10px;
+}
+
+.homeImage img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  font-family: "Waiting for the Sunrise", cursive, sans-serif;
+  font-size: 70px;
+  text-align: center;
+  color: rgb(237, 150, 9);
+}
+
+h2 {
+  /* font-family: "Waiting for the Sunrise", cursive, sans-serif; */
+  margin-top: -0.5em;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(237, 128, 55);
+}
+
+p.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 650;
+}
+
+/*different Flex containers here. Should customize each box more later...*/
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: none;
+}
+.flex-container > div {
+  margin: 5px;
+  padding: 10px;
+}
+
+.flex-containerInbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: none;
+}
+.flex-containerInbox > div {
+  margin: 5px;
+  padding: 10px;
+}
+
+.flex-containerAcct {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /*background-image: url("../Images/SunsetBeachLessTree.jpg");
+  opacity: 1; Whoops! Does the whole container!!*/
+  /*background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(22, 94, 167);*/
+}
+
+.containerBackground {
+  background-image: url("../Images/SunsetBeachLessTree.jpg");
+  opacity: 0.5; /*Whoops! Does the whole container!!*/
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.flex-containerAcct > div {
+  margin: 5px;
+  padding: 10px;
+}
+
+.quicksandFlexText {
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  color: rgb(237, 150, 9);
+  font-weight: 800;
+  text-align: center;
+}
+
+p.FlexInputText {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  color: rgb(7, 72, 252);
+  font-weight: 650;
+  /*text-align: center;*/
+}
+
+a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 650;
+}
+
+/*for the input boxes and buttons-need to work on these > clunky!*/
+input {
+  padding: 6px 0px 6px 0px;
+  margin: 5px;
+  border: 1px solid #665544;
+  color: #222222;
+}
+input:hover {
+  background-color: #66554411;
+}
+input.submit:active {
+  background-color: chocolate;
+}
+input.text {
+  color: #777777;
+}
+input.text:focus {
+  color: #665544;
+}

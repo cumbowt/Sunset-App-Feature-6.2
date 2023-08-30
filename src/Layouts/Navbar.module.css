@@ -1,0 +1,91 @@
+/* Navbar.module.css */
+
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 1em;
+}
+
+.activeLink {
+  border-bottom: 2px solid #ec7f3680; /* Change to the desired line color */
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+
+.activeLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid #4caf50;
+  border-radius: 0 0 10px 10px;
+}
+
+.navLeft,
+.navRight,
+.navCenter {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.navLeft a,
+.navRight a {
+  margin: 0 1em;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: #080808;
+  display: inline-block;
+}
+
+.logo {
+  width: 60px;
+  margin: auto;
+}
+
+.logoutButton {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #0000001f;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: #080808;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.logoutButton:hover {
+  background-color: #ec7f3680; /* Change to the desired hover color */
+}
+
+@media (min-width: 768px) {
+  .navBar {
+    flex-wrap: nowrap;
+    padding: 1em 2em;
+  }
+  .navLeft,
+  .navRight,
+  .navCenter {
+    flex: 1;
+    margin: 0;
+  }
+  .navLeft {
+    justify-content: flex-start;
+  }
+  .navCenter {
+    justify-content: center;
+  }
+  .navRight {
+    justify-content: flex-end;
+  }
+}
